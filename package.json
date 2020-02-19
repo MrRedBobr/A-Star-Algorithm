@@ -5,16 +5,7 @@
 	"private": true,
 	"main": "app/index.js",
 	"scripts": {
-		"start": "cross-env NODE_ENV=development electron .",
-		"server": "cross-env NODE_ENV=development webpack-dev-server --mode development --hot",
-		"dev": "concurrently \"yarn server\" \"yarn start\"",
-		"dev:build": "cross-env NODE_ENV=development webpack --mode production",
-		"prod:build": "cross-env NODE_ENV=production webpack --mode production",
-		"prod:elec": "electron .",
-		"prod:package": "yarn electron-builder build --publish never",
-		"prod:package-all": "yarn electron-builder build -mwl",
-		"prod:package-linux": "yarn electron-builder build --linux",
-		"prod:package-win": "yarn electron-builder build --win --x64"
+		"start": "electron ."
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.3",
